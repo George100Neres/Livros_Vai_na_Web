@@ -1,0 +1,100 @@
+header {
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 20vh;
+}
+
+.logoHeader {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+
+    img {
+        width: 20%;
+    }
+
+    h1 {
+        font-size: 27px;
+        color: #FFF;font-size: 27px;
+        color: #FFF;
+        text-shadow: black 5px 9px 4px;        
+    }
+}
+
+.navHeader {
+    width: 30%;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    li {
+        &:hover {
+          text-shadow: rgb(8, 151, 233) 1px 1px 3px;
+          scale: 1.1;
+        }
+      }
+}
+
+.link {
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover {
+        text-shadow: rgb(65, 135, 241) 1px 3px 3px;
+      }
+      
+}
+
+.barraDeBusca {
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    margin-right: 2%;
+    width: 15%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        height: 2rem;
+        border-radius: 16px;
+        text-indent: 20px;
+        border: none;
+        background: none;
+        color: white;
+        outline: none;
+    }
+
+    button {
+       background-color: transparent;
+       border: none;
+       cursor: pointer;
+    }
+}
+
+@media (max-width: 780px) {
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .logoHeader {
+        //border: solid red;
+        width: 90%;
+    }
+   .navHeader {
+    //border: solid gold;
+    width: 95%;
+   }
+   .barraDeBusca {
+    display: none;
+   }
+}
